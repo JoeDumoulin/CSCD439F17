@@ -15,7 +15,7 @@ This course will introduce you to linear methods of Supervised Statistical Learn
 #### What we will not do (probably)
 * We are going to avoid most machine learning methods in this class.  We will not be discussing unsupervised methods or reinforcement learning.  We won't discuss the very powerful decision tree methods or support vector machines.  
 * We will avoid the theoretical details of the methods we discuss.  The mathematics of machine learning is complex, often subtle, and involved.  We will see some mathematics, but only to help us understand how to implement these techniques and to get a basic understanding of design.
-* We will not see many of the modern techniques available in supervised learning, but will focus on implementing caonical examples.  Many of these methods are undergoing very rapid advaement and we will not have tim to cover everything.
+* We will not see many of the modern techniques available in supervised learning, but will focus on implementing canonical examples.  Many of these methods are undergoing very rapid advancement and we will not have time to cover everything.
 
 #### Software Tools
 You should be familiar (expertise is not needed) with the following tools:
@@ -41,10 +41,10 @@ An approximate sequence of events for this course is outlined below:
 
 <table>
 <tr><th>Date</th><th>Contents</th><th>Assignment Info</th></tr>
-<tr><td>09/20</td><td>Introduction, Resources, Modern Machine Learning Example (Hotdog/Not Hotdog)</td><td>Reading/Essay Assignment</td></tr>
-<tr><td>09/25</td><td>What is Machine Learning? Mathematics Review, Python basics and installation</td><td></td></tr>
-<tr><td>09/27</td><td>Python tools continued, jupyter notebooks</td><td>Essay Assignment Due</td></tr>
-<tr><td>10/02</td><td>Probability and statistics tools in python</td><td></td></tr>
+<tr><td>09/20</td><td>Introduction, Resources, Modern Machine Learning Example (Hotdog/Not Hotdog)</td><td></td></tr>
+<tr><td>09/25</td><td>What is Machine Learning? Mathematics Review, Python basics and installation</td><td>Reading/Essay Assignment</td></tr>
+<tr><td>09/27</td><td>Python tools continued, jupyter notebooks</td><td></td></tr>
+<tr><td>10/02</td><td>Probability and statistics tools in python</td><td>Essay Assignment Due</td></tr>
 <tr><td>10/04</td><td>Linear regression: examples and overview.</td><td>Linear Regression Assignment</td></tr>
 <tr><td>10/09</td><td>How linear regression learning works.  </td><td></td></tr>
 <tr><td>10/11</td><td>Linear regression continued.</td><td></td></tr>
