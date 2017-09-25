@@ -55,6 +55,7 @@
 	```
 	cd test
 	mkdir project
+	cd project
 	jupyter notebook
 	```
 	Your browser will open up.  in the browser, you will see this:
