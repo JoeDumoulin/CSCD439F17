@@ -59,6 +59,36 @@
 	jupyter notebook
 	```
 	Your browser will open up.  in the browser, you will see this:
-	![jupyter notebook](https://github.com/JoeDumoulin/CSCD439F17/blob/master/images/2017-09-25T3.32.06PM.png "new screen")
 	
+	![jupyter notebook](https://github.com/JoeDumoulin/CSCD439F17/blob/master/images/2017-09-25T3.32.06PM.png "first page")
 	
+	Create a new notebook.  On the right of the screen select the 'New' button.
+	
+	![jupyter notebook](https://github.com/JoeDumoulin/CSCD439F17/blob/master/images/2017-09-25T3.46.32PM.png "select kernel")
+	
+	Select 'Python 3'.  A new page opens up.  you can type some python into the page and press ctrl-Enter.  the python should execute as in the example below.
+	
+	![jupyter notebook](https://github.com/JoeDumoulin/CSCD439F17/blob/master/images/2017-09-25T3.52.45PM.png "run python")
+	
+	Test if matplotlib is working.  Press '+' on the upper left of the screen.  A new code box appears.  copy and paste the following code:
+	
+	```
+	import numpy as np
+	import matplotlib.pyplot as plt
+
+	N = 1000
+	x = np.linspace(0.0, 10.0, N)
+	y = np.random.rand(N)
+	plt.title('Uniform Distriibution')
+	plt.scatter(x,y)
+	plt.show()
+	```
+	
+	 Now run the code (ctrl-Enter) as before.  You should see te following:
+	 
+	 ![jupyter notebook](https://github.com/JoeDumoulin/CSCD439F17/blob/master/images/2017-09-25T3.59.48PM.png "run python")
+	 
+	 If you saw the plot, matplotlib is working!
+	 
+	 
+	 
