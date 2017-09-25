@@ -18,9 +18,10 @@
 	
 4. Install [Guest Additions](https://www.virtualbox.org/manual/ch04.html) in the ubuntu client.
 	
-5. Install prereqs for virtual environment:
+5. Install git and prereqs for virtual environment:
 
 	```
+	sudo apt-get git
 	sudo apt-get install build-essential python3-dev python3-setuptools python3-tk
 	```
 
