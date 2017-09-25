@@ -84,7 +84,7 @@
 	plt.show()
 	```
 	
-	 Now run the code (ctrl-Enter) as before.  You should see te following:
+	 Now run the code (ctrl-Enter) as before.  You should see the following:
 	 
 	 ![jupyter notebook](https://github.com/JoeDumoulin/CSCD439F17/blob/master/images/2017-09-25T3.59.48PM.png "run python")
 	 
