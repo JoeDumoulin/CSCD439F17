@@ -3,7 +3,7 @@
 
 1. Install Virtual Box ( **If you are running ubuntu 16.04 on your system, then you can skip to step 3 below.**)
 
-	go to [VirtualBox Wiki Downloads](https://www.virtualbox.org/wiki/Downloads) and download the version of VB appropriate for your base operating system.  
+	go to [VirtualBox Wiki Downloads](https://www.virtualbox.org/wiki/Downloads) and download the version of VBox appropriate for your base operating system.  
 
 	Installation details can be found [here](https://www.virtualbox.org/manual/ch02.html).
 
