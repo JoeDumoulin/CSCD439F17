@@ -58,4 +58,4 @@
 	jupyter notebook
 	```
 	Your browser will open up.  in the browser, you will see this:
-	![jupyter notebook](https://github.com/JoeDumoulin/CSCD439F17/blob/master/images/Screen%20Shot%202017-09-25%20at%203.32.06%20PM.png "new screen")
+	![jupyter notebook](https://github.com/JoeDumoulin/CSCD439F17/blob/master/images/2017-09-25T3.32.06PM.png "new screen")
