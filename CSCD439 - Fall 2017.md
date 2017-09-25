@@ -42,7 +42,7 @@ An approximate sequence of events for this course is outlined below:
 <table>
 <tr><th>Date</th><th>Contents</th><th>Assignment Info</th></tr>
 <tr><td>09/20</td><td>Introduction, Resources, Modern Machine Learning Example (Hotdog/Not Hotdog)</td><td></td></tr>
-<tr><td>09/25</td><td>What is Machine Learning? Mathematics Review, Python basics and installation</td><td>Reading/Essay Assignment</td></tr>
+<tr><td>09/25</td><td>What is Machine Learning? Mathematics Review, Python basics and installation</td><td>Essay Assignment</td></tr>
 <tr><td>09/27</td><td>Python tools continued, jupyter notebooks</td><td></td></tr>
 <tr><td>10/02</td><td>Probability and statistics tools in python</td><td>Essay Assignment Due</td></tr>
 <tr><td>10/04</td><td>Linear regression: examples and overview.</td><td>Linear Regression Assignment</td></tr>
