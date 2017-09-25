@@ -10,7 +10,7 @@ Machine Learning comprises many varied techniques.  What are the general propert
 
 This essay should be turned in as either a text file, markdown file, or pdf.  See the syllabus for due dates.
 
-Use web, book, or video resources.  Be sure to provide a bibliography of the resources you found.  You should watch and be prepared to discuss in class these three videos: 
+Use web, book, or video resources.  Be sure to provide a bibliography of the resources you found.  You should watch and be prepared to discuss in class these two videos: 
 
 * [How we teach computers to understand pictures | Fei Fei Li](https://www.youtube.com/watch?v=40riCqvRoMs) About 20 minutes.
 * [Andrew Ng: Artificial Intelligence is the New Electricity](https://www.youtube.com/watch?v=21EiKfQYZXc) This one is long but really good.
