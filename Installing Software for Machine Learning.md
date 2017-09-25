@@ -58,4 +58,4 @@
 	jupyter notebook
 	```
 	Your browser will open up.  in the browser, you will see this:
-	![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+	![jupyter notebook](https://github.com/JoeDumoulin/CSCD439F17/blob/master/images/Screen%20Shot%202017-09-25%20at%203.32.06%20PM.png "new screen")
