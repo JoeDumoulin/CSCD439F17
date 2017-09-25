@@ -29,7 +29,7 @@
 7. Create and activate a virtual environment for testing.
 
 	```
-	virtualenv testve
+	virtualenv test
 	source testve/bin/activate
 	```
 	
@@ -50,12 +50,14 @@
 
 10. Test using jupyter notebook.  
 
-	First go to the testve folder and create a notebook folder. then run jupyter
+	First go to the test folder and create a notebook folder. then run jupyter
 
 	```
-	cd testve
-	mkdir project_notebook
+	cd test
+	mkdir project
 	jupyter notebook
 	```
 	Your browser will open up.  in the browser, you will see this:
 	![jupyter notebook](https://github.com/JoeDumoulin/CSCD439F17/blob/master/images/2017-09-25T3.32.06PM.png "new screen")
+	
+	
