@@ -37,16 +37,16 @@
 8. Now, in the virtual environment, install pandas, statsmodel, and scikit-learn.
 
 	```
-	pip install -U numpy scipy
-	pip install -U pandas statsmodels
-	pip install -U scikit-learn
-	pip install -U matplotlib
+	pip3 install -U numpy scipy
+	pip3 install -U pandas statsmodels
+	pip3 install -U scikit-learn
+	pip3 install -U matplotlib
 	```
 	
 9. install ipython and jupyter.
 
 	```
-	pip install -U ipython jupyter
+	pip3 install -U ipython jupyter
 	```
 
 10. Test using jupyter notebook.  
