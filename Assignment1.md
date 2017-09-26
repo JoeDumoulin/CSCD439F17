@@ -1,7 +1,7 @@
 # CSCD439- Fall 2017
 # Assignment 1 - What is Machine Learning?
 
-Machine Learning comprises many varied techniques.  What are the general properties of machine learning?  In this assignment you will write an essay or not less than 3000 words and not more than 4000 words that talks about one or more of the following:
+Machine Learning comprises many varied techniques.  What are the general properties of machine learning?  In this assignment you will write an essay or not less than 1 page and not more than 2 pages that talks about one or more of the following:
 
 * What is a reasonable definition of Machine Learning?
 * What does Machine Learning have to do with data?
