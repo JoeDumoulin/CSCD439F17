@@ -94,14 +94,85 @@ lr.fit(X_train, y_train)
 Check the weights created for the model.
 
 ```
+lr.coef_,lr.intercept_
+```
+
+Check the statistics of the model using the functions in the module ```sklearn.metrics```.  For example, 
 
 ```
+from sklearn import metrics
+metrics.r2_score(y_test, test_predicted)
+```
+
+You can find a list of these functions and examples at [sklearn.org](http://scikit-learn.org/stable/modules/model_evaluation.html)
+
+Finally, do some calculations to look at the distribution of residuals from the test data and the model.  Some examples are:
+
 
 Questions for this part of the exercise are:
 
 * How might you choose which column is best for the predictive model?
 * Can you compare the quality of the different columns as predictors before you train a model?  How? 
 * how many rows are in the training data?  How many rows in the test data?
+* What do the metric scores tell you about the model?  
 
 
-**The final part of the exercise
+**The final part of the exercise**  is to create multivariable regression model to predict prices and to see how that affects the quality of the model to predict prices.
+
+Pick numerical columns only at first, separate train and test data, then train a model.
+
+```
+df = df.drop(['id', 'date', 'zipcode', 'waterfront', 'view', 'condition', 'grade', 'lat', 'long'], axis=1)
+
+# Get X matrix and y vector.
+X = df.drop(['price'], axis=1).as_matrix()
+y = df[['price']].as_matrix()
+
+# Train/test split
+from sklearn.linear_model import LinearRegression
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+
+# Train the regression model 
+lr = LinearRegression()
+lr.fit(X_train, y_train)
+
+# Generate predictions for analysis
+train_predicted = lr.predict(X_train)
+test_predicted = lr.predict(X_test)
+
+# plot residuals against predictions
+import matplotlib.pyplot as plt
+plt.scatter(train_predicted , train_predicted - y_train, color = 'b', s=1, alpha=0.5)
+test_predicted = lr.predict(X_test)
+plt.scatter(test_predicted , test_predicted - y_test, color = 'g', s=1)
+plt.hlines(y=0, xmin=0, xmax = 5000000, color='r')
+plt.show()
+```
+Think about how you might improve this model by
+ * Removing predictors that don't help
+ * Adding relevant categorical data.
+
+Quesstions to answer for this part of the homework are:
+
+* What are the values of the parameters learned by the model?  what is the intercept?
+* How can I evaluate the quality of multivariate models since I can't plot them and look at them?  Why can't I plot them directly?
+* How does variance affect the model's ability to predict prices?
+* What visual tools do I have to check for likely helpful predictors?  Which metrics can help?
+* Think about how you might use zip code to make a beter model.    How can we organize the 70 zip codes to provide insight into price diferentiationwithout adding 69 dimensions to the model?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
