@@ -1,25 +1,27 @@
 # CSCD439- Fall 2017
 # Assignment 2 - Predicting King County Housing Prices
 
-In this assignment, you will use pandas, statsmodels, and scikit-learn to predict housing prices in different areas o fKing County, Washington based on actual data of home sales in 2014-2015.  This assignment comprises three parts:
+In this assignment, you will use pandas, statsmodels, and scikit-learn to predict housing prices in different areas of King County, Washington based on actual data of home sales in 2014-2015.  This assignment comprises three parts:
 
 1. Download and check the data for issues.  Prepare the data for training.  Create some basic plots to view the data and understand potentially dependant features.
-2. Create a model using some subset of the data.  Hold out part of the data so that you can use it for validation.  Create this regression model using only one feature (the "sqft_living" feature for example) and the price of the home.  Identify the accuracy of the resulting model using the held-out data.  Identify the weights learned by the model.
-3. Re-create the model using multiple features.  Check the model using a held out set of data as before.  Compare the results.  Print some plots showing the statistical quality of the model.
+2. Create a model using one column of the data.  Hold out part of the price column and the column you choose so that you can use it for validation.  Create this regression model using only one feature (the "sqft_living" feature for example) and the price of the home.  Identify the accuracy of the resulting model using the held-out data.  Identify the weights learned by the model.
+3. Re-create the model using multiple predictors.  Check the model using a held out set of data as before.  Compare the results.  Print some plots showing the statistical quality of the model.
 
 Here are some guidelines for getting started.
 
 ### Getting the Data
-download the data from [kaggle](https://www.kaggle.com/harlfoxem/housesalesprediction/data) as a csv file.  
+Download the data from [kaggle](https://www.kaggle.com/harlfoxem/housesalesprediction/data) as a csv file.  
 
 ### Download the housing data
-From your ubuntu system, use the browser to download the data for the housing as above.  Copy the zip file ```housesalesprediction.zip``` from your Dowload folder to your project folder.  then unzip the file: ```unzip housesalesprediction.zip```.
+From your ubuntu system, use the browser to download the data for the housing as above.  Copy the zip file ```housesalesprediction.zip``` from your Download folder to your project folder.  then unzip the file: ```unzip housesalesprediction.zip```.
+
+Create a folder for your homework.  For example, ```mkdir Assignment2```.  Copy or move the ``` kc_house_data.csv``` file to this folder.  
 
 ### Start your virtual environment
-Now open a terminal session and start you virtual environment.  If you have created a virtul environment 
+Now open a terminal session and start your virtual environment.  For example, type ```source test/bin/activate``` if your virtual environment is called "test".
 
 ### Create a Jupyter Notebook for the Assignment
-Go to your virtualenv project folder and start ```jupyter notebook```.  In the browser window that opens up, create a new notebook and do your work on the created page.
+Go to your virtualenv project folder and start ```jupyter notebook```.  In the notebook main window, surf to the folder you created for your homework.  Create a new notebook and do your work on the created page.
 
 Start by opening the data file on the notebook and checking its shape.
 
@@ -53,13 +55,11 @@ nulldf.sum(axis=0)
 **The first task in the homework is to answer the following questions:**
 
 * Is there any data missing (Nan)?  If so, how would you remove it?
-* What columns appear to offer the best hope of a linear approximation?
+* What columns appear to offer the best hope of a linear approximation of price?
 * Which columns data are categorical?  Which are numerical?
 * Which is the "best" column to use for prediction?  This is a judgement call, but I'd like to know how you justify it.
 
-**To complete the second task**, you will want to select one of the columns to use to try to predict price.  You will see how to measure the accuracy of the model using a test set created from the full data set.
-
-In order to train the regression model, you need to change the data from a pandas DataFrame or Series type to a numpy vector.  For example, you may choose "grade" as a predictor of price.  Then you will do something like this:
+**To complete the second task**, you will want to select one of the columns to use to try to predict price.  In order to train the regression model, you need to change the data from a pandas DataFrame or Series type to a numpy vector.  For example, you may choose "grade" as a predictor of price.  Then you will do something like this:
 
 ```
 #load data 
@@ -101,6 +101,7 @@ Check the statistics of the model using the functions in the module ```sklearn.m
 
 ```
 from sklearn import metrics
+
 metrics.r2_score(y_test, test_predicted)
 ```
 
@@ -113,11 +114,11 @@ Questions for this part of the exercise are:
 
 * How might you choose which column is best for the predictive model?
 * Can you compare the quality of the different columns as predictors before you train a model?  How? 
-* how many rows are in the training data?  How many rows in the test data?
+* How many rows are in the training data?  How many rows in the test data?
 * What do the metric scores tell you about the model?  
 
 
-**The final part of the exercise**  is to create multivariable regression model to predict prices and to see how that affects the quality of the model to predict prices.
+**The final part of the exercise**  is to create multivariable regression model to predict prices and to see how that affects the ability of the model to predict prices.
 
 Pick numerical columns only at first, separate train and test data, then train a model.
 
@@ -153,13 +154,13 @@ Think about how you might improve this model by
  * Removing predictors that don't help
  * Adding relevant categorical data.
 
-Quesstions to answer for this part of the homework are:
+Questions to answer for this part of the homework are:
 
-* What are the values of the parameters learned by the model?  what is the intercept?
+* What are the values of the coefficients learned by the model?  what is the intercept?
 * How can I evaluate the quality of multivariate models since I can't plot them and look at them?  Why can't I plot them directly?
 * How does variance affect the model's ability to predict prices?
 * What visual tools do I have to check for likely helpful predictors?  Which metrics can help?
-* Think about how you might use zip code to make a beter model.    How can we organize the 70 zip codes to provide insight into price diferentiationwithout adding 69 dimensions to the model?
+* Think about how you might use zip code to make a better model.    How can we organize the 70 zip codes to provide insight into price diferentiation without adding 69 dimensions to the model?
 
 
 
