@@ -97,6 +97,13 @@ Check the weights created for the model.
 lr.coef_,lr.intercept_
 ```
 
+Generate predictions for analysis
+
+```
+train_predicted = lr.predict(X_train)
+test_predicted = lr.predict(X_test)
+```
+
 Check the statistics of the model using the functions in the module ```sklearn.metrics```.  For example, 
 
 ```
