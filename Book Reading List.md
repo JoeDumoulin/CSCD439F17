@@ -1,7 +1,7 @@
 # CSCD439- Fall 2017
 # Book Reading List
 
-This list of books is meant as a general guide to literature on machnie learning.  There are many of these typess of lists and I provide a short list of such lists below.  What follows is my own list.
+This list of books is meant as a general guide to literature on machine learning.  There are many of these types of lists and I provide a short list of such lists below.  What follows is my own list.
 
 The essential basics of general Machine Learning...
 
