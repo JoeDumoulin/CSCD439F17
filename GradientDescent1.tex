@@ -1,0 +1,24 @@
+\documentclass[10pt]{article}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\usepackage{enumitem}\begin{document}
+
+
+\begin{itemize}[itemsep=0mm]
+  \setlength\itemsep{0em}
+  \item Define $J(\theta)$
+  \item Define $\nabla J(\theta)$
+  \item Pick starting $\theta$
+  \item For the number of iterations,
+  \vspace{-2mm}
+  \begin{itemize}[itemsep=0mm]
+    \setlength\itemsep{0em}
+    \item $t \leftarrow t+1$
+    \item Update $\theta^{t+1} = \theta^t - \alpha \nabla J(\theta^t)$
+    \item if $\nabla J(\theta^t) = 0$ then break
+  \end{itemize}
+  \item return $\theta$
+\end{itemize}
+\end{document}
