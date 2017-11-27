@@ -1,7 +1,7 @@
 # CSCD439- Fall 2017
 # Assignment 5 - Predicting Hand-Written Digits with Convolutional Networks
 
-In this assignment, you will use tensorflow to build a Convolutional Neural Network to build a predictor for MNIST.  You should use the MNIST data available through tesorflow.
+In this assignment, you will use tensorflow to build a Convolutional Neural Network to build a predictor for MNIST.  You should use the MNIST data available through tensorflow.
 
 
 To complete this assugnment, you will want to do something like the network described [here](https://www.tensorflow.org/tutorials/layers).  
