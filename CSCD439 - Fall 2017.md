@@ -75,7 +75,7 @@ Grading will look like this:
 
 Things that will matter to your assignment grade:
 
-* I can run your code (training and evaluation).  This i sabout correctness of your code.
+* I can run your code (training and evaluation).  This is about correctness of your code.
 * I can understand what is happening when I run your code (What is it doing, What are the results).  This involves both style and documentation.
 * Things that do not work or that you do not understand are marked out and documented in your code.  This will help you (and me) learn new things.
 * On-time submission of homework assignments. 
